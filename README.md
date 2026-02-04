@@ -112,8 +112,7 @@ git clone https://github.com/peshalmishra/weather-dashboard.git
 
 ## 📸 Screenshots
 
-<img width="1920" height="1080" alt="Screenshot (421)" src="https://github.com/user-attachments/assets/d4c64f32-452f-468b-8bdc-75a2e572c014" />
-
+<img width="1920" height="1080" alt="Screenshot (422)" src="https://github.com/user-attachments/assets/6289f551-d168-4450-a4bb-f680c6d05069" />
 
 ---
 
