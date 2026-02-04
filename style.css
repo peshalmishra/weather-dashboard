@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    transition: background 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body.dark {
+    color: white;
+}
+
+.app {
+    width: 90%;
+    max-width: 420px;
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(8px);
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+}
+
+
+body.dark .app {
+    background: rgba(0,0,0,0.6);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    margin: 15px 0;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px 0 0 8px;
+    border: none;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    background: #4facfe;
+    color: white;
+}
+
+.card {
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.05);
+}
+
+.hidden {
+    display: none;
+}
+
+.loader {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #ccc;
+    border-top: 4px solid #333;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 15px auto;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* 🌧️ Rain Animation */
+.rain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.rain::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: repeating-linear-gradient(
+        transparent,
+        transparent 4px,
+        rgba(255,255,255,0.3) 6px
+    );
+    animation: rain 0.5s linear infinite;
+}
+
+@keyframes rain {
+    from { background-position: 0 0; }
+    to { background-position: 0 100px; }
+}

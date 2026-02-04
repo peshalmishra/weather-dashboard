@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="rain hidden"></div>
+
+<div class="app">
+    <header>
+        <h1>🌦️ Weather Dashboard</h1>
+        <button id="themeToggle">🌙</button>
+    </header>
+
+    <form id="searchForm">
+        <input type="text" id="cityInput" placeholder="Enter city name">
+        <button type="submit">Search</button>
+    </form>
+
+    <div id="loader" class="loader hidden"></div>
+    <div id="error" class="error hidden"></div>
+
+    <div id="weatherCard" class="card hidden">
+        <h2 id="cityName"></h2>
+        <p id="temperature"></p>
+        <p id="description"></p>
+        <p id="humidity"></p>
+        <p id="wind"></p>
+    </div>
+
+    <div id="aqiCard" class="card hidden">
+        <h2>🌫️ Air Quality</h2>
+        <p id="aqiValue"></p>
+        <p id="aqiStatus"></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
